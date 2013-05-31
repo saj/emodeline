@@ -7,7 +7,7 @@
 function! EModeLine()
 	let i = 0
 	let regexp = '^.*-\*-\s\(.\{-}\)\s-\*-.*$'
-	while i < 3
+	while i < 6
 		let line = getline(i)
 		if match(line, regexp) > -1
 			let ml = substitute(line, regexp, '\1', '')
